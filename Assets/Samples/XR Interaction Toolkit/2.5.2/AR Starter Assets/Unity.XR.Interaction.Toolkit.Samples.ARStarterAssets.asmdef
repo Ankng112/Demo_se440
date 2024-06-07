@@ -2,6 +2,7 @@
     "name": "Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets",
     "rootNamespace": "",
     "references": [
+        "Demo_se440",
         "Unity.InputSystem",
         "Unity.XR.CoreUtils",
         "Unity.XR.Interaction.Toolkit",

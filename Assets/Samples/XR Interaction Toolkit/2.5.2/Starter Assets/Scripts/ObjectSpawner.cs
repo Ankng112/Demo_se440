@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine.XR.Interaction.Toolkit.Utilities;
 
+
 namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
 {
     /// <summary>
@@ -12,7 +13,6 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         [SerializeField]
         [Tooltip("The camera that objects will face when spawned. If not set, defaults to the main camera.")]
         Camera m_CameraToFace;
-
         /// <summary>
         /// The camera that objects will face when spawned. If not set, defaults to the <see cref="Camera.main"/> camera.
         /// </summary>
@@ -192,6 +192,11 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         /// <seealso cref="objectSpawned"/>
         public bool TrySpawnObject(Vector3 spawnPoint, Vector3 spawnNormal)
         {
+            if (CustomSpawnGameObject(spawnPoint, spawnNormal))
+            {
+                return true;
+            }
+            
             if (m_OnlySpawnInView)
             {
                 var inViewMin = m_ViewportPeriphery;
@@ -233,5 +238,12 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
             objectSpawned?.Invoke(newObject);
             return true;
         }
+        
+        protected virtual bool CustomSpawnGameObject
+            (Vector3 spawnPoint, Vector3 spawnNormal)
+        {
+            return true;
+        }
     }
+
 }
