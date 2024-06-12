@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 public class CarController : MonoBehaviour
 {
@@ -28,19 +29,26 @@ public class CarController : MonoBehaviour
     [SerializeField] private float maxSteerAngle = 30f;
     private float _moveInput;
     private float _steerInput;
+    [SerializeField] private InputAction input;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        input.Enable();
+        input.performed += ctx =>
+        {
+            _moveInput = ctx.ReadValue<Vector2>().y;
+            _steerInput = ctx.ReadValue<Vector2>().x;
+        };
     }
 
     // Update is called once per frame
     void Update()
     {
-        _moveInput = Input.GetAxis("Vertical");
-        _steerInput = Input.GetAxis("Horizontal");
+        // _moveInput = Input.GetAxis("Vertical");
+        // _steerInput = Input.GetAxis("Horizontal");
         WheelAnimation();
-        BrakeControl();
+        //BrakeControl();
     }
 
     private void BrakeControl()

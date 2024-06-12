@@ -2600,6 +2600,54 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "move",
+            "id": "1fbd7bb4-5273-432b-8581-bfa59de5c510",
+            "actions": [
+                {
+                    "name": "Right",
+                    "type": "Button",
+                    "id": "2360fcd1-8e66-4f65-a34d-3df17d88f78a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "left",
+                    "type": "Button",
+                    "id": "dd72dcbc-4680-49fa-a689-6d1f77fc8000",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1db99aae-9b54-4c67-b500-ff6f5d52e722",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Right",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7ea4d485-ff33-4f24-bdf5-26252fc41f5a",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "left",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

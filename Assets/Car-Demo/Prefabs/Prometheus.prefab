@@ -99,6 +99,71 @@ MonoBehaviour:
   speed: 120
   steerSpeed: 1
   maxSteerAngle: 35
+  input:
+    m_Name: Input
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 6835f542-4350-460d-a515-af69c3030584
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 3D Vector
+      m_Id: 0ff772e1-f9ab-4b4f-adb7-05417dd0e82f
+      m_Path: 3DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 88b054bd-6c0d-495a-ae1d-3b43b43e0d42
+      m_Path: 
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 92bbc1f6-c5f2-4131-ac48-e1cabca23d39
+      m_Path: 
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 86028ed5-30c2-43d9-b72b-d25214c69ca3
+      m_Path: 
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input
+      m_Flags: 8
+    - m_Name: right
+      m_Id: cafc785b-e989-4ee1-a87a-8b5211fd4921
+      m_Path: 
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input
+      m_Flags: 8
+    - m_Name: forward
+      m_Id: b1408dae-195c-42ea-a234-f5b6f89d33bf
+      m_Path: 
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input
+      m_Flags: 8
+    - m_Name: backward
+      m_Id: c1f7ca5d-353b-40d5-ad23-c2420c3dcf24
+      m_Path: 
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input
+      m_Flags: 8
+    m_Flags: 0
 --- !u!54 &3951495113652251260
 Rigidbody:
   m_ObjectHideFlags: 0
