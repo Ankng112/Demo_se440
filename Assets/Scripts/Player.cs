@@ -28,14 +28,13 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.tag.Equals("obstacle"))
         {
-            Debug.Log("Player collided with " + other.gameObject.name);
-            Debug.Log("Player collided with force " + other.impulse);
-            Debug.Log("Player collided with relative velocity "
-                      + other.relativeVelocity);
-            Debug.Log("Player collided with contact points "
-                      + other.contacts[0].point);
-            
+            Return(other.gameObject);
         }
+    }
+    
+    private void Return(GameObject obj)
+    {
+        ObjectPool.Instance.ReturnOne(obj);
     }
 
     private void OnTriggerEnter(Collider other)
