@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="74a1983d-646a-4a5c-a898-4e730e728670" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Demo_se440/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Demo_se440/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Google Cardboard XR Plugin for Unity/1.25.0/Hello Cardboard/Scenes/HelloCardboard.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Google Cardboard XR Plugin for Unity/1.25.0/Hello Cardboard/Scenes/HelloCardboard.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Google Cardboard XR Plugin for Unity/1.25.0/Hello Cardboard/Scripts/CardboardStartup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Google Cardboard XR Plugin for Unity/1.25.0/Hello Cardboard/Scripts/CardboardStartup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RayItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RayItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +34,8 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CarController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VRInteractionButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.google.xr.cardboard@591c2282f1/Runtime/Api.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.google.xr.cardboard@591c2282f1/Runtime/CardboardReticlePointer.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
