@@ -28,7 +28,7 @@ public class FloatingObject : MonoBehaviour
         int countUnderWaterPoint = 0 ;
         foreach (var point in floatingPoints)
         {
-            float diff = point.position.y - waterHeight;
+            float diff = point.position.y - OceanManager.Instance.GetWaveHeight(point.position);
 
             if (diff < 0)
             {
