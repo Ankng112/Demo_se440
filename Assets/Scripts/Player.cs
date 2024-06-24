@@ -1,10 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
+using Mirror;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class Player : MonoBehaviour
+public class Player : NetworkBehaviour
 {
     [SerializeField] private float _force = 10f;
     private Rigidbody _rb;
@@ -12,6 +14,11 @@ public class Player : MonoBehaviour
     void Start()
     {
         _rb = GetComponent<Rigidbody>();
+        
+        if (! isLocalPlayer) return;
+        var cineMachine = FindObjectOfType<CinemachineVirtualCamera>();
+        cineMachine.Follow = transform;
+        cineMachine.LookAt = transform;
     }
 
     // Update is called once per frame
