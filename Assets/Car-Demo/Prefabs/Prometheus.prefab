@@ -44,7 +44,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 261786959625234688}
-  - component: {fileID: 5719313929208305704}
   - component: {fileID: 3951495113652251260}
   m_Layer: 0
   m_Name: Prometheus
@@ -71,34 +70,6 @@ Transform:
   - {fileID: 901333272}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5719313929208305704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 642287924342879162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 004ba8f188f56453d92f690cd04f789e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wheels:
-  - type: 0
-    collider: {fileID: 264133459358063998}
-    transform: {fileID: 1276657636418845578}
-  - type: 0
-    collider: {fileID: 6394981305805632572}
-    transform: {fileID: 2897099083007925690}
-  - type: 1
-    collider: {fileID: 4984333346351326195}
-    transform: {fileID: 6528361102885328038}
-  - type: 1
-    collider: {fileID: 1382666535608082093}
-    transform: {fileID: 2699983780271061893}
-  speed: 120
-  steerSpeed: 1
-  maxSteerAngle: 35
 --- !u!54 &3951495113652251260
 Rigidbody:
   m_ObjectHideFlags: 0
