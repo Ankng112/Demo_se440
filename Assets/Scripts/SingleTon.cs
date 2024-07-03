@@ -13,6 +13,7 @@ namespace DefaultNamespace
             
         private void Awake()
         {
+            transform.position = Vector3.one;
             if (_instance == null)
             {
                 _instance = (T) this; 
