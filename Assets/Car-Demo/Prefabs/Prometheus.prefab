@@ -87,18 +87,23 @@ MonoBehaviour:
   - type: 0
     collider: {fileID: 264133459358063998}
     transform: {fileID: 1276657636418845578}
+    dust: {fileID: 0}
   - type: 0
     collider: {fileID: 6394981305805632572}
     transform: {fileID: 2897099083007925690}
+    dust: {fileID: 0}
   - type: 1
     collider: {fileID: 4984333346351326195}
     transform: {fileID: 6528361102885328038}
+    dust: {fileID: 0}
   - type: 1
     collider: {fileID: 1382666535608082093}
     transform: {fileID: 2699983780271061893}
-  speed: 120
-  steerSpeed: 1
+    dust: {fileID: 0}
+  speed: 100
+  steerSpeed: 4
   maxSteerAngle: 35
+  centerOfMass: {x: 0, y: -1, z: 0}
 --- !u!54 &3951495113652251260
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -107,7 +112,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 642287924342879162}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 11233
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
