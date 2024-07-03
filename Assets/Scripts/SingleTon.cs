@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace DefaultNamespace
 {
+    // DAY LA CLASS SINGLETON HET
     public class SingleTon<T> : MonoBehaviour where T : SingleTon<T>
     {
         private static T _instance;
