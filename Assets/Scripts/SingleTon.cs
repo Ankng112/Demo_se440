@@ -15,7 +15,7 @@ namespace DefaultNamespace
         {
             // tui tao cái instance cho class này
             // oke 
-
+            // Tao la A day
             if (_instance == null)
             {
                 _instance = (T) this; 
