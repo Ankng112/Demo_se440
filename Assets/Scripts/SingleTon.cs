@@ -13,6 +13,8 @@ namespace DefaultNamespace
             
         private void Awake()
         {
+            // tui tao cái instance cho class này
+            // oke 
             if (_instance == null)
             {
                 _instance = (T) this; 
