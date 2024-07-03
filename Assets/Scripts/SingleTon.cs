@@ -24,7 +24,7 @@ namespace DefaultNamespace
             {
                 Destroy(gameObject);
             }
-
+            /// Tao la B day
             if (isDontDestroyOnload)
             {
                 DontDestroyOnLoad(this);
